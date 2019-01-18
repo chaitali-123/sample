@@ -7,11 +7,12 @@ node {
 
   stage('Load') {
     code = load 'example.groovy'
+    code.example1()
   }
 
   stage('Execute') {
-    code.example1()
+    code.example2()
   }
 }
 
-code.example2()
+
